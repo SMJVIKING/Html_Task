@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("fonts/webfonts/Vazirmatn[wght].woff2")
+      format("woff2 supports variations"),
+    url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-primary: #9b39d4;
+  --color-primary-dark: rgb(119, 53, 182);
+  --color-secondary-light: rgb(186, 121, 247);
+  --color-secondary-dark: rgba(195, 56, 230, 0.534);
+}
+
+.users__info {
+  font-family: "Vazirmatn";
+  height: auto;
+  width: auto;
+}
+.users__info--header{
+margin-right: 4rem;
+display: flex;
+justify-content: flex-start;
+}
+
+.users .user{
+  margin: 0 auto;
+}
+.users{
+  display: grid;
+  row-gap: 4rem;
+}
+
+@media screen and (min-width: 400px) {
+  .users {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .users {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .users {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* users-information */
+.user {
+  margin: 1.4rem;
+  border-radius: 1rem;
+  background-color: var(--color-secondary-light);
+  height: auto;
+  width: 400px;
+  align-self: center;
+  justify-self: left;
+  padding: 0rem 1rem 0rem;
+}
+
+/* datas-header */
+.header--detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.6rem;
+}
+.user__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.box {
+  background-color: var(--color-primary);
+  border-radius: 0.6rem;
+  width: 34px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* data-body */
+.user__body p {
+  color: rgb(66, 62, 62);
+}
+
+/* data-footer */
+.user__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary-dark);
+  border-radius: 1rem;
+  margin-bottom: 1.4rem;
+}
+.user__footer img {
+  padding: 1rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 1.4rem;
+}
+
+.user__footer .btn {
+  font-family: "Vazirmatn";
+  background-color: var(--color-secondary-dark);
+  color: white;
+  width: 120px;
+  height: 40px;
+  margin: 1rem;
+  border-radius: 1rem;
+  align-content: center;
+}
+
+.user__footer .btn:hover {
+  outline: 0;
+  box-shadow: 2px 2px 6px 2px rgba(195, 100, 219, 0.562);
+}
+
+.footer__detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
