@@ -1,34 +1,33 @@
 @font-face {
-  font-family: "Vazirmatn";
-  src: url("fonts/webfonts/Vazirmatn[wght].woff2")
-      format("woff2 supports variations"),
-    url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
-  font-weight: 100 900;
+  font-family: Vazirmatn;
+  src: url("/task-One-Html/src/fonts/Vazirmatn-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+
 :root {
   --color-primary: #9b39d4;
-  --color-primary-dark: rgb(119, 53, 182);
+  --color-primary-dark: rgb(136, 45, 221);
   --color-secondary-light: rgb(186, 121, 247);
   --color-secondary-dark: rgba(195, 56, 230, 0.534);
 }
 
 .users__info {
-  font-family: "Vazirmatn";
-  height: auto;
-  width: auto;
+  font-family: Vazirmatn;
+  margin: 0 auto;
+  max-width: 1140px;
 }
-.users__info--header{
-margin-right: 4rem;
-display: flex;
-justify-content: flex-start;
+.users__info--header {
+  margin-right: 1.4rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.users .user{
+.users .user {
   margin: 0 auto;
 }
-.users{
+.users {
   display: grid;
   row-gap: 4rem;
 }
@@ -57,7 +56,6 @@ justify-content: flex-start;
   border-radius: 1rem;
   background-color: var(--color-secondary-light);
   height: auto;
-  width: 400px;
   align-self: center;
   justify-self: left;
   padding: 0rem 1rem 0rem;
